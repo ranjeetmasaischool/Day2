@@ -1,7 +1,8 @@
+const asyncHandler = require("express-async-handler");
 // Create new contact
 // @route   POST /contacts
 // @access  Private
-const createContact = (req, res) => {
+const createContact = asyncHandler( async (req, res) => {
   console.log("This is post Hello World from contactapp.js");
   const { name, email, phone } = req.body;
   if (!name || !email || !phone) {
@@ -13,7 +14,7 @@ const createContact = (req, res) => {
     msg: "Create new contact",
     data: req.body,
   });
-};
+});
 
 // Get all contacts
 // @route   GET /contacts
