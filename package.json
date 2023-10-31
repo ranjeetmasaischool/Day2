@@ -1,0 +1,14 @@
+{
+  "name": "contactmanagment",
+  "version": "1.0.0",
+  "description": "This is 2nd day project of learning Node in 75 days chalange ",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ranjeet Kumar",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
